@@ -1,0 +1,11 @@
+{
+	"name":  "<%= themeName %>",
+	"dependencies": {
+		"wd-scripts": "0.2.x"
+	},
+	"devDependencies": {
+		"bourbon": "4.x",
+		"neat": "1.x",
+		"wd-reset": "1.x"
+	}
+}
