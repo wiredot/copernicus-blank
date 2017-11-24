@@ -1,0 +1,3 @@
+{
+	"directory": "public/content/themes/<%= themeDir %>/assets/bower/"
+}
