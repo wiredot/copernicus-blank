@@ -1,5 +1,5 @@
 {
-	"name":  "<%= themeName %>",
+	"name":  "copernicus-blank",
 	"dependencies": {
 		"wd-scripts": "0.2.x"
 	},
