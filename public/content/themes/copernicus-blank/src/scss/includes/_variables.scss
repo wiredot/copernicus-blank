@@ -1,3 +1,16 @@
 // --- colors ---
 $color-main: #006685;
-$blue: #08B3EC;
+$txt: #000000;
+$grey: #666666;
+$grey-light: #efefef;
+$grey-dark: #333333;
+
+
+// --- paths ---
+$assets: '/content/themes/<%= themeDir %>/assets/';
+$fonts: $assets + 'fonts/';
+
+
+// --- sizes ---
+$width: 1150px;
+$gutter: 50px;

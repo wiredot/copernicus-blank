@@ -1,7 +1,16 @@
-@import '../../../assets/bower/neat/app/assets/stylesheets/neat-helpers';
+$main-grid: (
+  columns: 12,
+  gutter: $gutter,
+);
 
-// Change the grid settings
-$column: 50px;
-$gutter: 50px;
-$grid-columns: 12;
-$max-width: 1150px;
+$main-grid-tablet: (
+  columns: 6,
+  gutter: $gutter/2,
+  media: "(max-width: 800px)"
+);
+
+$main-grid-mobile: (
+  columns: 1,
+  gutter: $gutter/3,
+  media: "(max-width: 650px)"
+);

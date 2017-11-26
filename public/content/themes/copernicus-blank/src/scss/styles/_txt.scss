@@ -1,0 +1,110 @@
+/* ----- txt ----- */
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 26px;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+.txt {
+	
+	p {
+		color: $txt;
+		line-height: 1.4;
+		margin-bottom: $gutter/2;
+	}
+
+	ul {
+		margin: 0 0 $gutter/2 $gutter/2;
+		list-style: disc;
+	}
+
+	ol {
+		list-style: decimal;
+		margin: 0 0 $gutter/2 $gutter/2;
+	}
+	
+	li {
+		line-height: 1.4;
+		color: $txt;
+	}
+
+	strong {
+		font-weight: 700;
+	}
+
+	img {
+
+		&.alignnone {
+			width: 100%;
+			height: auto;
+			margin-bottom: $gutter/2;
+		}
+
+		&.aligncenter {
+			margin: 0 auto $gutter/2 auto;
+			display: block;
+		}
+
+		&.alignright {
+			float: right;
+			margin: 0 0 $gutter/2 $gutter/2;
+		}
+
+		&.alignleft {
+			float: left;
+			margin: 0 $gutter/2 $gutter/2 0;
+		}
+	}
+
+	table {
+		line-height: 1.4;
+		width: 100%;
+		margin-bottom: $gutter/2;
+		color: $txt;
+
+		td {
+			padding: 5px;
+		}
+
+		th {
+			background-color: $grey;
+			padding: 10px 5px;
+		}
+
+		tr {
+			&:nth-child(odd) {
+				background-color: $grey-light;
+			}
+		}
+	}
+
+	blockquote {
+		padding-left: $gutter/2;
+		border-left: 2px solid $txt;
+		margin-bottom: $gutter/2;
+		line-height: 1.4;
+	}
+}

@@ -1,15 +1,20 @@
-/* ====== <%= themeName %> ====== */
-
 //* === Includes === */
+
 @import 'includes/variables.scss';
 @import 'includes/grid-settings';
 
+
 //* === Bourbon & Neat === */
+
 @import '../../assets/bower/bourbon/app/assets/stylesheets/bourbon';
-@import '../../assets/bower/neat/app/assets/stylesheets/neat';
+@import '../../assets/bower/neat/core/neat';
 @import '../../assets/bower/wd-reset/wd-reset';
 
 /* === Styles === */
+
+@import 'styles/fonts';
 @import 'styles/global';
+@import 'styles/layout';
+@import 'styles/txt';
 @import 'styles/header';
 @import 'styles/footer';

@@ -1,7 +1,7 @@
 {
-  "name": "copernicus-blank",
+  "name": "<%= themeDir %>",
   "version": "1.0.0",
-  "description": "copernicus-blank",
+  "description": "<%= themeDir %>",
   "main": "public/index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

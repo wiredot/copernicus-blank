@@ -1,11 +1,11 @@
 {
-	"name":  "copernicus-blank",
+	"name":  "<%= themeDir %>",
 	"dependencies": {
 		"wd-scripts": "0.2.x"
 	},
 	"devDependencies": {
 		"bourbon": "4.x",
-		"neat": "1.x",
+		"neat": "2.x",
 		"wd-reset": "1.x"
 	}
 }
