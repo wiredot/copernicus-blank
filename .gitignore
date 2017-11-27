@@ -13,3 +13,4 @@ public/content/themes/copernicus-blank/assets/bower
 /.gulp
 /node_modules
 *.map
+/package-lock.json
