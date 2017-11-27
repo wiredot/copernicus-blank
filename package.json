@@ -1,7 +1,7 @@
 {
-  "name": "<%= themeDir %>",
+  "name": "<%= themeName %>",
   "version": "1.0.0",
-  "description": "<%= themeDir %>",
+  "description": "<%= themeDescription %>",
   "main": "public/index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

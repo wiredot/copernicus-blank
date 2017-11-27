@@ -1,5 +1,5 @@
 {
-	"name":  "<%= themeDir %>",
+	"name":  "<%= themeName %>",
 	"dependencies": {
 		"wd-scripts": "0.2.x"
 	},
