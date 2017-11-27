@@ -1,8 +1,6 @@
 //* === Includes === */
 
-@import 'includes/variables.scss';
-@import 'includes/grid-settings';
-
+@import 'variables';
 
 //* === Bourbon & Neat === */
 
@@ -14,7 +12,8 @@
 
 @import 'styles/fonts';
 @import 'styles/global';
+@import 'styles/headings';
 @import 'styles/layout';
-@import 'styles/txt';
 @import 'styles/header';
 @import 'styles/footer';
+@import 'styles/txt';

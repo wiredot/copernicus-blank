@@ -1,0 +1,41 @@
+// --- colors ---
+$color1: #006685;
+$color2: #a00;
+$txt: #333;
+$grey: #666666;
+$grey2: #efefef;
+$grey3: #333333;
+
+$font: '';
+
+// --- paths ---
+$assets: '/content/themes/<%= themeDir %>/assets/';
+$fonts: $assets + 'fonts/';
+
+
+// --- sizes ---
+
+$column: 50px;
+$gutter: 50px;
+$gutter-tablet: 30px;
+$gutter-mobile: 20px;
+
+
+// --- grid ---
+
+$main-grid: (
+	columns: 12,
+	gutter: $gutter,
+);
+
+$main-grid-tablet: (
+	columns: 12,
+	gutter: $gutter-tablet,
+	media: "(max-width: 800px)"
+);
+
+$main-grid-mobile: (
+	columns: 12,
+	gutter: $gutter-mobile,
+	media: "(max-width: 650px)"
+);

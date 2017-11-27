@@ -1,19 +1,39 @@
-/* ----- layout ----- */
-
 .container {
 	@include grid-container;
-	max-width: $width + $gutter*2;
+	max-width: 12 * $column + 13 * $gutter;
 	margin: 0 auto $gutter auto;
 
-	.full {
+	@include grid-media($main-grid-tablet) {
+		margin-bottom: $gutter-tablet;
+	}
+
+	@include grid-media($main-grid-mobile) {
+		margin-bottom: $gutter-mobile;
+	}
+
+	.single {
 		@include grid-column(12, $main-grid);
 
 		@include grid-media($main-grid-tablet) {
-			@include grid-column(6);
+			@include grid-column(12);
 		}
 
 		@include grid-media($main-grid-mobile) {
-			@include grid-column(1);
+			@include grid-column(12);
+		}
+		
+		&.narrow {
+			@include grid-shift(3, $main-grid);
+			@include grid-column(6, $main-grid);
+
+			@include grid-media($main-grid-tablet) {
+				@include grid-shift(1);
+				@include grid-column(10);
+			}
+
+			@include grid-media($main-grid-mobile) {
+				@include grid-shift(0);
+			}
 		}
 	}
 
@@ -25,58 +45,39 @@
 		}
 
 		@include grid-media($main-grid-mobile) {
-			@include grid-column(1);
+			@include grid-column(12);
+		}
+
+		&.narrow {
+			@include grid-column(4, $main-grid);
+		}
+
+		&.wide {
+			@include grid-column(8, $main-grid);
 		}
 	}
 
-	.big {
-		@include grid-column(8, $main-grid);
+	.quarter {
+		@include grid-column(3, $main-grid);
 
 		@include grid-media($main-grid-tablet) {
 			@include grid-column(6);
 		}
 
 		@include grid-media($main-grid-mobile) {
-			@include grid-column(1);
+			@include grid-column(12);
 		}
 	}
 
-	.small {
+	.third {
 		@include grid-column(4, $main-grid);
 
 		@include grid-media($main-grid-tablet) {
-			@include grid-column(6);
-		}
-
-		@include grid-media($main-grid-mobile) {
-			@include grid-column(1);
-		}
-	}
-
-	.middle {
-		@include grid-shift(3, $main-grid);
-		@include grid-column(6, $main-grid);
-
-		@include grid-media($main-grid-tablet) {
-			@include grid-shift(1);
 			@include grid-column(4);
 		}
 
 		@include grid-media($main-grid-mobile) {
-			@include grid-shift(0);
-			@include grid-column(1);
-		}
-	}
-
-	.footer {
-		@include grid-column(3, $main-grid);
-
-		@include grid-media($main-grid-tablet) {
-			@include grid-column(3);
-		}
-
-		@include grid-media($main-grid-mobile) {
-			@include grid-column(1);
+			@include grid-column(12);
 		}
 	}
 }
