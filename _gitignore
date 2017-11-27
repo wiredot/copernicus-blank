@@ -8,7 +8,7 @@ public/content/plugins
 public/content/smarty
 public/content/upgrade
 public/content/uploads
-public/content/themes/copernicus-blank/assets/bower
+public/content/themes/<%= themeDir %>/assets/bower
 /Movefile
 /.gulp
 /node_modules
