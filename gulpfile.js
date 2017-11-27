@@ -21,7 +21,7 @@ var options = {
 
 gulp.task('js', function() {
 	return gulp.src( options.src + 'js/*.js')
-		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+		.pipe(plumber({errorHandler: notify.onError("Error: <%= error_message %>")}))
 		.pipe(maps.init())
 		.pipe(concat('script.js'))
 		.pipe(maps.write('./'))
@@ -34,9 +34,10 @@ gulp.task('js', function() {
 });
 
 gulp.task('scss', function() {
-	return gulp.src( options.src + 'scss/style.scss')
-		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+	return gulp.src( options.src + 'scss/*.scss')
+		.pipe(plumber({errorHandler: notify.onError("Error: <%= error_message %>")}))
 		.pipe(maps.init())
+		.pipe(concat('style.css'))
 		.pipe(sass())
 		.pipe(maps.write('./'))
 		.pipe(gulp.dest( options.assets + 'css'))

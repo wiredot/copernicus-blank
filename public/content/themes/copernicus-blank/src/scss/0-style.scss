@@ -1,19 +1,9 @@
 //* === Includes === */
 
-@import 'variables';
+@import '_variables';
 
 //* === Bourbon & Neat === */
 
 @import '../../assets/bower/bourbon/app/assets/stylesheets/bourbon';
 @import '../../assets/bower/neat/core/neat';
 @import '../../assets/bower/wd-reset/wd-reset';
-
-/* === Styles === */
-
-@import 'styles/fonts';
-@import 'styles/global';
-@import 'styles/headings';
-@import 'styles/layout';
-@import 'styles/header';
-@import 'styles/footer';
-@import 'styles/txt';
