@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /* ----------- css files -------------- */
 
@@ -8,6 +8,6 @@ $cp_config['css']['style'] = array(
 	'media' => 'all',
 	'dependencies' => array(),
 	'links' => array(
-		'style' => 'assets/css/style.css'
-	)
+		'style' => 'assets/css/style.css',
+	),
 );

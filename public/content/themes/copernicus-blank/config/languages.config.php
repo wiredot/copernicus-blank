@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /* ----------- Languages -------------- */
 
@@ -9,5 +9,5 @@ $cp_config['language'][] = array(
 	'code' => 'en',
 	'iso' => 'en_US',
 	'postmeta_suffix' => '',
-	'default' => 1
+	'default' => 1,
 );
