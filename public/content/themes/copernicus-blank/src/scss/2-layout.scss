@@ -50,10 +50,26 @@
 
 		&.narrow {
 			@include grid-column(4, $main-grid);
+
+			@include grid-media($main-grid-tablet) {
+				@include grid-column(4);
+			}
+
+			@include grid-media($main-grid-mobile) {
+				@include grid-column(12);
+			}
 		}
 
 		&.wide {
 			@include grid-column(8, $main-grid);
+
+			@include grid-media($main-grid-tablet) {
+				@include grid-column(8);
+			}
+
+			@include grid-media($main-grid-mobile) {
+				@include grid-column(12);
+			}
 		}
 	}
 
@@ -79,5 +95,18 @@
 		@include grid-media($main-grid-mobile) {
 			@include grid-column(12);
 		}
+	}
+}
+
+.subcontainer {
+	@include grid-collapse($main-grid);
+	@include grid-container;
+
+	@include grid-media($main-grid-tablet) {
+		@include grid-collapse($main-grid-tablet);
+	}
+
+	@include grid-media($main-grid-mobile) {
+		@include grid-collapse($main-grid-mobile);
 	}
 }

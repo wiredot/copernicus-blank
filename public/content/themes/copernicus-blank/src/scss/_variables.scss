@@ -39,3 +39,20 @@ $main-grid-mobile: (
 	gutter: $gutter-mobile,
 	media: "(max-width: 650px)"
 );
+
+$sub-grid: (
+	columns: 8,
+	gutter: $gutter,
+);
+
+$sub-grid-tablet: (
+	columns: 8,
+	gutter: $gutter-tablet,
+	media: "(max-width: 800px)"
+);
+
+$sub-grid-mobile: (
+	columns: 8,
+	gutter: $gutter-mobile,
+	media: "(max-width: 650px)"
+);
