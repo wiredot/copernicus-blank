@@ -1,0 +1,17 @@
+{
+  "name": "<%= themeName %>",
+  "version": "1.0.0",
+  "description": "c<%= themeDescription %>",
+  "license": "MIT",
+  "dependencies": {
+    "bourbon": "^5.1.0",
+    "bourbon-neat": "^3.0.0",
+    "@fancyapps/fancybox": "^3.3.5",
+    "fitvids": "^2.0.0",
+    "flexmenu": "352Media/flexMenu",
+    "owl.carousel": "^2.3.4",
+    "svg4everybody": "^2.1.9",
+    "wd-reset": "^1.0.2",
+    "wd-scripts": "^1.0.0"
+  }
+}

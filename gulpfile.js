@@ -1,56 +1,73 @@
 'use strict';
 
 var gulp = require('gulp'),
-	sass = require('gulp-sass'),
-	maps = require('gulp-sourcemaps'),
 	concat = require('gulp-concat'),
-	svgmin = require('gulp-svgmin'),
-	svgstore = require('gulp-svgstore'),
-	rsp = require('remove-svg-properties').stream,
-	imagemin = require('gulp-tinypng'),
-	livereload = require('gulp-livereload'),
-	plumber = require('gulp-plumber'),
+	maps = require('gulp-sourcemaps'),
 	notify = require('gulp-notify'),
-	del = require('del'),
-	path = require('path');
+	plumber = require('gulp-plumber'),
+	svgstore = require('gulp-svgstore'),
+	svgmin = require('gulp-svgmin'),
+	path = require('path'),
+	sass = require('gulp-sass'),
+	browserSync = require('browser-sync'),
+	reload = browserSync.reload,
+	rsp = require('remove-svg-properties').stream;
 
 var options = {
-	assets: 'public/content/themes/<%= themeDir %>/assets/',
-	src: 'public/content/themes/<%= themeDir %>/src/'
+	assets: 'public/content/themes/<%= themeDir %>/assets',
+	src: 'public/content/themes/<%= themeDir %>/src'
 }
 
-gulp.task('js', function() {
-	return gulp.src( options.src + 'js/*.js')
-		.pipe(plumber({errorHandler: notify.onError("Error: <%= error_message %>")}))
-		.pipe(maps.init())
-		.pipe(concat('script.js'))
-		.pipe(maps.write('./'))
-		.pipe(gulp.dest( options.assets + 'js'))
-		.pipe(notify({
-			message: 'all done',
-			title: 'JS'
-		}))
-		;
+gulp.task('default', ['scss', 'js', 'svg']);
+
+gulp.task('watch', ['browser-sync'], function() {
+	gulp.watch( options.src + '/js/*.js', ['js']);
+	gulp.watch( options.src + '/scss/**/*.scss', ['scss']);
+	gulp.watch( options.src + '/svg/*.svg', ['svg']);
+});
+
+gulp.task('browser-sync', function(){
+
+	var files = [
+		'./templates/*.html'
+	];
+
+	browserSync.init(files, {
+		proxy: 'http://local.campuslive.ch',
+		notify: false
+	});
 });
 
 gulp.task('scss', function() {
-	return gulp.src( options.src + 'scss/*.scss')
-		.pipe(plumber({errorHandler: notify.onError("Error: <%= error_message %>")}))
+	return gulp.src( options.src + '/scss/*.scss')
+		.pipe(plumber({errorHandler: notify.onError("Error: <<%= error_message %>>")}))
 		.pipe(maps.init())
 		.pipe(concat('style.css'))
 		.pipe(sass())
 		.pipe(maps.write('./'))
-		.pipe(gulp.dest( options.assets + 'css'))
-		.pipe(livereload())
+		.pipe(gulp.dest( options.assets + '/css') )
 		.pipe(notify({
-			message: 'all done',
-			title: 'SCSS'
+			message: 'CSS generated',
+			title: '<%= themeDir %>'
 		}))
-		;
+		.pipe(browserSync.stream());
+});
+
+gulp.task('js', function() {
+	return gulp.src( options.src + '/js/*.js')
+		.pipe(plumber({errorHandler: notify.onError("Error: <<%= error_message %>>")}))
+		.pipe(maps.init())
+		.pipe(concat('script.js'))
+		.pipe(maps.write('./'))
+		.pipe(gulp.dest( options.assets + '/js'))
+		.pipe(notify({
+			message: 'JS generated',
+			title: '<%= themeDir %>'
+		}));
 });
 
 gulp.task('svg', function() {
-	return gulp.src( options.src + 'svg/*.svg')
+	return gulp.src( options.src + '/svg/*.svg')
 		.pipe(svgmin(function (file) {
 			var prefix = path.basename(file.relative, path.extname(file.relative));
 			return {
@@ -63,30 +80,5 @@ gulp.task('svg', function() {
 			}
 		}))
 		.pipe(svgstore(''))
-		.pipe(gulp.dest( options.assets + 'svg'));
-});
-
-gulp.task('cleanimg', function () {
-	del( options.assets + 'images/*.{png,jpg,jpeg}');
-});
-
-gulp.task('img', ['cleanimg'], function () {
-	gulp.src( options.src + 'images/*.{png,jpg,jpeg}')
-		.pipe(imagemin('iSsNqV3CinZPpNT_i5LV87-VeryQMdUT'))
-		.pipe(gulp.dest( options.assets + 'images'));
-});
-
-gulp.task('default', ['scss', 'js', 'svg', 'img']);
-
-gulp.task('watch', function() {
-	livereload.listen();
-	gulp.watch( options.src + 'js/*.js', ['js']);
-	gulp.watch( options.src + 'scss/**/*.scss', ['scss']);
-	gulp.watch( options.src + 'svg/*.svg', ['svg']);
-	gulp.watch( options.src + 'images/*.{png,jpg,jpeg}')
-		.on('change', function(file) {
-			gulp.src(file.path)
-				.pipe(imagemin('iSsNqV3CinZPpNT_i5LV87-VeryQMdUT'))
-				.pipe(gulp.dest( options.assets + 'images'));
-		});
+		.pipe(gulp.dest( options.assets + '/svg'));
 });

@@ -8,9 +8,9 @@ public/content/plugins
 public/content/smarty
 public/content/upgrade
 public/content/uploads
-public/content/themes/<%= themeDir %>/assets/bower
+public/content/themes/<%= themeDir %>/assets/lib
 /Movefile
 /.gulp
 /node_modules
 *.map
-/package-lock.json
+yarn.lock
