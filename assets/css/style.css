@@ -687,7 +687,8 @@ a {
 
 .social svg {
   width: 18px;
-  height: 18px; }
+  height: 18px;
+  fill: #fff; }
 
 .social .strava svg {
   width: 13px; }

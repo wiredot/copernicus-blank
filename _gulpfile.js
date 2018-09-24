@@ -33,14 +33,14 @@ gulp.task('browser-sync', function(){
 	];
 
 	browserSync.init(files, {
-		proxy: 'http://blank.wordpress.org/',
+		proxy: '<%= themeUrl %>',
 		notify: false
 	});
 });
 
 gulp.task('scss', function() {
 	return gulp.src( options.src + '/scss/**/*.scss')
-		.pipe(plumber({errorHandler: notify.onError("Error: <%= error_message %>")}))
+		.pipe(plumber({errorHandler: notify.onError("Error: <<%= error_message %>>")}))
 		.pipe(maps.init())
 		.pipe(concat('style.css'))
 		.pipe(sass())
@@ -48,21 +48,21 @@ gulp.task('scss', function() {
 		.pipe(gulp.dest( options.assets + '/css') )
 		.pipe(notify({
 			message: 'CSS generated',
-			title: 'Copernicus Blank'
+			title: '<%= themeDir %>'
 		}))
 		.pipe(browserSync.stream());
 });
 
 gulp.task('js', function() {
 	return gulp.src( options.src + '/js/**/*.js')
-		.pipe(plumber({errorHandler: notify.onError("Error: <%= error_message %>")}))
+		.pipe(plumber({errorHandler: notify.onError("Error: <<%= error_message %>>")}))
 		.pipe(maps.init())
 		.pipe(concat('script.js'))
 		.pipe(maps.write('./'))
 		.pipe(gulp.dest( options.assets + '/js'))
 		.pipe(notify({
 			message: 'JS generated',
-			title: 'Copernicus Blank'
+			title: '<%= themeDir %>'
 		}));
 });
 
