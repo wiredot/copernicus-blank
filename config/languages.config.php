@@ -2,12 +2,12 @@
 
 /* ----------- Languages -------------- */
 
-$cp_config['language'][] = array(
-	'name' => 'english',
-	'short_name' => 'en',
+$config['language']['pl'] = array(
+	'name' => 'polski',
+	'short_name' => 'pl',
 	'status' => 1,
-	'code' => 'en',
-	'iso' => 'en_US',
+	'code' => 'pl',
+	'iso' => 'pl_PL',
 	'postmeta_suffix' => '',
 	'default' => 1,
 );
