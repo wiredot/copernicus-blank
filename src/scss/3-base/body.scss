@@ -8,10 +8,6 @@ body {
 	color: $wdc-color-grey-5;
 }
 
-.home-text {
-	@include hide-text;
-}
-
 a {
 	color: $color-primary;
 

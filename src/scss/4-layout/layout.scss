@@ -1,4 +1,4 @@
-.main-content, .two-columns {
+.one-column, .two-columns {
 	@include grid-container;
 }
 
@@ -15,7 +15,7 @@
 	}
 }
 
-.main-column {
+.column-main {
 	@include grid-column( 8, $main-grid );
 	margin-bottom: 50px;
 
