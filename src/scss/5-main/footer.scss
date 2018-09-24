@@ -1,11 +1,8 @@
-.main-footer {
+.footer-main {
 	@include grid-container;
 	background-color: $wdc-color-black;
 	color: $wdc-color-white;
 	padding: 33px 0;
-	background: url('../images/footer-bg.jpg');
-	background-position: center;
-	background-size: cover;
 	
 	nav {
 		@include grid-column( 12, $main-grid );
