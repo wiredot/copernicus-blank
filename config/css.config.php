@@ -9,6 +9,7 @@ $config['css']['style'] = array(
 	'dependencies' => array(),
 	'version' => null,
 	'files' => array(
+		'fancybox' => 'assets/lib/@fancyapps/fancybox/dist/jquery.fancybox.css',
 		'style' => 'assets/css/style.css',
 	),
 );
