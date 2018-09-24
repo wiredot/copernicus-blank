@@ -2,7 +2,7 @@
   "name": "<%= themeName %>",
   "version": "1.0.0",
   "description": "<%= themeDescription %>",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "dependencies": {
     "@fancyapps/fancybox": "^3.3.5",
     "aos": "^2.3.3",
