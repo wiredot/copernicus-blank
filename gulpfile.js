@@ -14,8 +14,8 @@ var gulp = require('gulp'),
 	rsp = require('remove-svg-properties').stream;
 
 var options = {
-	assets: 'public/content/themes/<%= themeDir %>/assets',
-	src: 'public/content/themes/<%= themeDir %>/src'
+	assets: 'assets',
+	src: 'src'
 }
 
 gulp.task('default', ['scss', 'js', 'svg']);
@@ -33,7 +33,7 @@ gulp.task('browser-sync', function(){
 	];
 
 	browserSync.init(files, {
-		proxy: 'http://local.campuslive.ch',
+		proxy: '<%= themeUrl %>',
 		notify: false
 	});
 });

@@ -2,13 +2,10 @@
   "name": "<%= themeName %>",
   "version": "1.0.0",
   "description": "<%= themeDescription %>",
-  "main": "public/index.php",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "WireDot",
+  "main": "index.php",
   "license": "GPL",
   "devDependencies": {
+    "browser-sync": "^2.24.7",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-notify": "^3.2.0",
@@ -18,7 +15,6 @@
     "gulp-svgmin": "^1.2.4",
     "gulp-svgstore": "^6.1.1",
     "path": "^0.12.7",
-    "remove-svg-properties": "^0.3.3",
-    "browser-sync": "^2.24.6"
+    "remove-svg-properties": "^0.3.3"
   }
 }
