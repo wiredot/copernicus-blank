@@ -1,4 +1,4 @@
-.main-header {
+.header-main {
 	width: 100%;
 	background-color: $wdc-color-white;
 	height: calc( 100vh - 200px );
@@ -16,14 +16,6 @@
 		height: auto;
 		margin-bottom: 25px;
 		display: block;
-	}
-
-	&.small {
-		height: 30vh;
-
-		@include grid-media($main-grid-mobile) {
-			height: auto;
-		}
 	}
 
 	.nav-bar {
