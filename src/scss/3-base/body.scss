@@ -1,0 +1,21 @@
+body {
+	font-size: 16px;
+	background-color: $wdc-color-white;
+	height: 100%;
+	position: relative;
+	font-family: $font-primary;
+	font-weight: 300;
+	color: $wdc-color-grey-5;
+}
+
+.home-text {
+	@include hide-text;
+}
+
+a {
+	color: $color-primary;
+
+	&:hover {
+		color: lighten($color-primary, 20%);
+	}
+}

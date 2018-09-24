@@ -1,0 +1,88 @@
+.newsletter {
+	@include grid-container;
+	padding: 60px 0;
+	background: url('../images/newsletter-bg.jpg');
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 100px;
+
+	@include grid-media($main-grid-tablet) {
+		margin-bottom: 75px;
+		padding: 40px 0;
+	}
+
+	@include grid-media($main-grid-mobile) {
+		margin-bottom: 50px;
+		padding: 25px 0 15px 0;
+	}
+
+	h2, p, form {
+		@include grid-column( 12, $main-grid );
+		text-align: center;
+		color: $wdc-color-white;
+
+		@include grid-media($main-grid-tablet) {
+			@include grid-column( 12, $main-grid-tablet );
+		}
+
+		@include grid-media($main-grid-mobile) {
+			@include grid-column( 12, $main-grid-mobile );
+		}
+	}
+
+	h2 {
+		font-size: 36px;
+		margin-bottom: 18px;
+
+		@include grid-media($main-grid-tablet) {
+			font-size: 30px;
+		}
+
+		@include grid-media($main-grid-mobile) {
+			font-size: 24px;
+		}
+	}
+
+	p {
+		font-size: 18px;
+		margin-bottom: 25px;
+		font-weight: 300;
+
+		@include grid-media($main-grid-tablet) {
+			font-size: 16px;
+		}
+
+		@include grid-media($main-grid-mobile) {
+			font-size: 14px;
+		}
+	}
+
+	input {
+		background: rgba( $wdc-color-white, 0.7 );
+		width: 400px;
+		margin-right: 20px;
+
+		@include grid-media($main-grid-tablet) {
+		}
+
+		@include grid-media($main-grid-mobile) {
+			width: 60%;
+		}
+	}
+
+	button {
+		border-radius: 4px;
+		padding: 0 40px;
+
+		@include grid-media($main-grid-mobile) {
+			padding: 0 20px;
+		}
+	}
+
+	input {
+
+		&::placeholder {
+			color: $wdc-color-grey-3;
+		}
+	}
+}
