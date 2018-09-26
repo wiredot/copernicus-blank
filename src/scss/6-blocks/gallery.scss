@@ -3,36 +3,6 @@
 
 	padding-left: 0;
 
-	&.alignwide {
-		@include grid-column( 10, $main-grid );
-		@include grid-shift( 1, $main-grid );
-
-		@include grid-media($main-grid-tablet) {
-			@include grid-column( 10, $main-grid-tablet );
-			@include grid-shift( 1, $main-grid-tablet );
-		}
-
-		@include grid-media($main-grid-mobile) {
-			@include grid-column( 12, $main-grid-mobile );
-			@include grid-shift( 0, $main-grid-mobile );
-		}
-	}
-
-	&.alignfull {
-		@include grid-column( 12, $main-grid );
-		@include grid-shift( 0, $main-grid );
-
-		@include grid-media($main-grid-tablet) {
-			@include grid-column( 12, $main-grid-tablet );
-			@include grid-shift( 0, $main-grid-tablet );
-		}
-
-		@include grid-media($main-grid-mobile) {
-			@include grid-column( 12, $main-grid-mobile );
-			@include grid-shift( 0, $main-grid-mobile );
-		}
-	}
-
 	@include wp-block-gallery-column(1);
 	@include wp-block-gallery-column(2);
 	@include wp-block-gallery-column(3);

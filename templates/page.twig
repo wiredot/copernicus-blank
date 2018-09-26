@@ -1,8 +1,8 @@
 {% extends 'layouts/one-column.twig' %}
-
 {% block content %}
-	<div class="gutenberg txt">
+	<div class="gutenberg">
 		{% loop %}
+			<h1>{{ the_title() }}</h1>
 			{{ the_content() }}
 		{% endloop %}
 	</div>

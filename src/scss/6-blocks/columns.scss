@@ -1,0 +1,17 @@
+.wp-block-columns {
+	@extend .gutenberg-block;
+
+	.wp-block-column {
+		margin-right: $column-spacing;
+	}
+
+	@include wp-block-columns-column(1);
+	@include wp-block-columns-column(2);
+
+	p, div, h1, h2, h3, h4, h5, h6, pre {
+		margin-left: 0;
+		left: 0;
+		width: 100%;
+	}
+
+}

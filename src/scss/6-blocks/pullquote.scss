@@ -1,0 +1,26 @@
+.wp-block-pullquote {
+	@extend .gutenberg-block;
+
+	border-top: 4px solid $wdc-color-grey-5;
+	border-bottom: 4px solid $wdc-color-grey-5;
+
+	p,
+	cite {
+		width: 80%;
+		clear: both;
+		float: none;
+		margin: 0 auto;
+		font-weight: normal;
+		left: auto;
+		text-align: center;
+		display: block;
+	}
+
+	p {
+		margin-bottom: 10px;
+	}
+
+	cite {
+		margin-top: 20px;
+	}
+}

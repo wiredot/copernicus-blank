@@ -1,0 +1,5 @@
+.wp-block-separator {
+	@extend .gutenberg-block;
+
+	border: 1px solid $wdc-color-grey-5;
+}

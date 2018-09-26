@@ -1,0 +1,10 @@
+.wp-block-table {
+	@extend .gutenberg-block;
+	border: 1px solid $wdc-color-grey-1;
+	padding: 20px;
+
+	td {
+		padding: 10px;
+		border: 1px solid $wdc-color-grey-1;
+	}
+}

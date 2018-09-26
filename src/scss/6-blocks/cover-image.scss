@@ -1,0 +1,9 @@
+.wp-block-cover-image {
+	@extend .gutenberg-block;
+
+	p {
+		width: 80%;
+		margin: 0 auto;
+		left: auto;
+	}
+}

@@ -1,15 +1,3 @@
-@font-face {
-  font-family: 'Montserrat';
-  src: url("../fonts/montserrat-light.woff2") format("woff2"), url("../fonts/montserrat-light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
 /* --- WD Components --- Reset --- */
 a, abbr, acronym, address, applet, area, article, aside, audio, b, base, basefont, bdi, bdo, big, blockquote, body, br, button, canvas, caption, center, cite, code, col, colgroup, data, datalist, dd, del, details, dfn, dialog, dir, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, frame, frameset, h1, h2, h3, h4, h5, h6, head, header, hr, html, i, iframe, img, input, ins, kbd, label, legend, li, link, main, map, mark, meta, meter, nav, noframes, noscript, object, ol, optgroup, option, output, p, param, picture, pre, progress, q, rp, rt, ruby, s, samp, script, section, select, small, source, span, strike, strong, style, sub, summary, sup, svg, table, tbody, td, template, textarea, tfoot, th, thead, time, title, tr, track, tt, u, ul, var, video, wbr {
   margin: 0;
@@ -65,7 +53,7 @@ html {
   font-size: 14px;
   cursor: pointer;
   display: inline-block;
-  border-radius: 0;
+  border-radius: 3px;
   height: 36px;
   padding: 0 20px;
   outline: none;
@@ -100,85 +88,85 @@ html {
   .wdc-form input[type=reset].primary,
   .wdc-form input[type=button].primary,
   .wdc-form button.primary {
-    background-color: #D0021B;
+    background-color: #900;
     color: #fff; }
     .wdc-button.primary:hover,
     .wdc-form input[type=submit].primary:hover,
     .wdc-form input[type=reset].primary:hover,
     .wdc-form input[type=button].primary:hover,
     .wdc-form button.primary:hover {
-      background-color: #9d0214; }
+      background-color: #660000; }
     .wdc-button.primary.outline,
     .wdc-form input[type=submit].primary.outline,
     .wdc-form input[type=reset].primary.outline,
     .wdc-form input[type=button].primary.outline,
     .wdc-form button.primary.outline {
-      box-shadow: 0 0 0 1px #D0021B inset;
+      box-shadow: 0 0 0 1px #900 inset;
       background-color: transparent;
-      color: #D0021B; }
+      color: #900; }
       .wdc-button.primary.outline:hover,
       .wdc-form input[type=submit].primary.outline:hover,
       .wdc-form input[type=reset].primary.outline:hover,
       .wdc-form input[type=button].primary.outline:hover,
       .wdc-form button.primary.outline:hover {
-        color: #9d0214;
-        border-color: #9d0214; }
+        color: #660000;
+        border-color: #660000; }
   .wdc-button.secondary,
   .wdc-form input[type=submit].secondary,
   .wdc-form input[type=reset].secondary,
   .wdc-form input[type=button].secondary,
   .wdc-form button.secondary {
-    background-color: #090;
+    background-color: #980;
     color: #fff; }
     .wdc-button.secondary:hover,
     .wdc-form input[type=submit].secondary:hover,
     .wdc-form input[type=reset].secondary:hover,
     .wdc-form input[type=button].secondary:hover,
     .wdc-form button.secondary:hover {
-      background-color: #006600; }
+      background-color: #665b00; }
     .wdc-button.secondary.outline,
     .wdc-form input[type=submit].secondary.outline,
     .wdc-form input[type=reset].secondary.outline,
     .wdc-form input[type=button].secondary.outline,
     .wdc-form button.secondary.outline {
-      box-shadow: 0 0 0 1px #090 inset;
+      box-shadow: 0 0 0 1px #980 inset;
       background-color: transparent;
-      color: #090; }
+      color: #980; }
       .wdc-button.secondary.outline:hover,
       .wdc-form input[type=submit].secondary.outline:hover,
       .wdc-form input[type=reset].secondary.outline:hover,
       .wdc-form input[type=button].secondary.outline:hover,
       .wdc-form button.secondary.outline:hover {
-        color: #006600;
-        border-color: #006600; }
+        color: #665b00;
+        border-color: #665b00; }
   .wdc-button.tertiary,
   .wdc-form input[type=submit].tertiary,
   .wdc-form input[type=reset].tertiary,
   .wdc-form input[type=button].tertiary,
   .wdc-form button.tertiary {
-    background-color: #049;
+    background-color: #088;
     color: #fff; }
     .wdc-button.tertiary:hover,
     .wdc-form input[type=submit].tertiary:hover,
     .wdc-form input[type=reset].tertiary:hover,
     .wdc-form input[type=button].tertiary:hover,
     .wdc-form button.tertiary:hover {
-      background-color: #002d66; }
+      background-color: #005555; }
     .wdc-button.tertiary.outline,
     .wdc-form input[type=submit].tertiary.outline,
     .wdc-form input[type=reset].tertiary.outline,
     .wdc-form input[type=button].tertiary.outline,
     .wdc-form button.tertiary.outline {
-      box-shadow: 0 0 0 1px #049 inset;
+      box-shadow: 0 0 0 1px #088 inset;
       background-color: transparent;
-      color: #049; }
+      color: #088; }
       .wdc-button.tertiary.outline:hover,
       .wdc-form input[type=submit].tertiary.outline:hover,
       .wdc-form input[type=reset].tertiary.outline:hover,
       .wdc-form input[type=button].tertiary.outline:hover,
       .wdc-form button.tertiary.outline:hover {
-        color: #002d66;
-        border-color: #002d66; }
+        color: #005555;
+        border-color: #005555; }
   .wdc-button.small,
   .wdc-form input[type=submit].small,
   .wdc-form input[type=reset].small,
@@ -454,7 +442,7 @@ html {
       transition: border-color 0.3s; }
   .wdc-radio:checked + span:after,
   .wdc-form input[type=radio]:checked + span:after {
-    background-color: #D0021B;
+    background-color: #900;
     width: 7px;
     height: 7px;
     top: 4px;
@@ -462,6 +450,18 @@ html {
   .wdc-radio:focus + span:before,
   .wdc-form input[type=radio]:focus + span:before {
     border: 1px solid #2185d0; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat-light.woff2") format("woff2"), url("../fonts/montserrat-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
 body {
   font-size: 18px;
@@ -479,9 +479,13 @@ a {
 
 .gutenberg {
   margin-bottom: 50px; }
+  .gutenberg::after {
+    clear: both;
+    content: "";
+    display: block; }
 
-.gutenberg-block, .gutenberg > .wp-block-gallery, .gutenberg h1, .gutenberg h2, .gutenberg h3, .gutenberg h4, .gutenberg h5, .gutenberg h6, .gutenberg > .wp-block-image, .gutenberg > ul,
-.gutenberg > ol, .gutenberg p {
+.gutenberg-block, .wp-block-spacer, .wp-block-code, .wp-block-columns, .wp-block-cover-image, .wp-block-embed, .gutenberg > .wp-block-gallery, .gutenberg h1, .gutenberg h2, .gutenberg h3, .gutenberg h4, .gutenberg h5, .gutenberg h6, .gutenberg > .wp-block-image, .gutenberg > ul,
+.gutenberg > ol, .gutenberg p, .wp-block-preformatted, .wp-block-pullquote, .wp-block-quote, .wp-block-separator, .wp-block-button, .wp-block-table, .wp-block-verse {
   width: calc(66.66667% - 83.33333px);
   float: left;
   margin-left: 50px;
@@ -490,21 +494,67 @@ a {
   clear: both;
   margin-bottom: 25px; }
   @media (max-width: 1050px) {
-    .gutenberg-block, .gutenberg > .wp-block-gallery, .gutenberg h1, .gutenberg h2, .gutenberg h3, .gutenberg h4, .gutenberg h5, .gutenberg h6, .gutenberg > .wp-block-image, .gutenberg > ul,
-    .gutenberg > ol, .gutenberg p {
+    .gutenberg-block, .wp-block-spacer, .wp-block-code, .wp-block-columns, .wp-block-cover-image, .wp-block-embed, .gutenberg > .wp-block-gallery, .gutenberg h1, .gutenberg h2, .gutenberg h3, .gutenberg h4, .gutenberg h5, .gutenberg h6, .gutenberg > .wp-block-image, .gutenberg > ul,
+    .gutenberg > ol, .gutenberg p, .wp-block-preformatted, .wp-block-pullquote, .wp-block-quote, .wp-block-separator, .wp-block-button, .wp-block-table, .wp-block-verse {
       width: calc(83.33333% - 55px);
       float: left;
       margin-left: 30px;
       left: calc(8.33333% - 32.5px + 30px);
       position: relative; } }
   @media (max-width: 800px) {
-    .gutenberg-block, .gutenberg > .wp-block-gallery, .gutenberg h1, .gutenberg h2, .gutenberg h3, .gutenberg h4, .gutenberg h5, .gutenberg h6, .gutenberg > .wp-block-image, .gutenberg > ul,
-    .gutenberg > ol, .gutenberg p {
+    .gutenberg-block, .wp-block-spacer, .wp-block-code, .wp-block-columns, .wp-block-cover-image, .wp-block-embed, .gutenberg > .wp-block-gallery, .gutenberg h1, .gutenberg h2, .gutenberg h3, .gutenberg h4, .gutenberg h5, .gutenberg h6, .gutenberg > .wp-block-image, .gutenberg > ul,
+    .gutenberg > ol, .gutenberg p, .wp-block-preformatted, .wp-block-pullquote, .wp-block-quote, .wp-block-separator, .wp-block-button, .wp-block-table, .wp-block-verse {
       width: calc(100% - 40px);
       float: left;
       margin-left: 20px;
       left: calc(0% - 20px + 20px);
       position: relative; } }
+  .gutenberg-block.alignwide, .alignwide.wp-block-spacer, .alignwide.wp-block-code, .alignwide.wp-block-columns, .alignwide.wp-block-cover-image, .alignwide.wp-block-embed, .gutenberg > .alignwide.wp-block-gallery, .gutenberg h1.alignwide, .gutenberg h2.alignwide, .gutenberg h3.alignwide, .gutenberg h4.alignwide, .gutenberg h5.alignwide, .gutenberg h6.alignwide, .gutenberg > .alignwide.wp-block-image, .gutenberg > ul.alignwide,
+  .gutenberg > ol.alignwide, .gutenberg p.alignwide, .alignwide.wp-block-preformatted, .alignwide.wp-block-pullquote, .alignwide.wp-block-quote, .alignwide.wp-block-separator, .alignwide.wp-block-button, .alignwide.wp-block-table, .alignwide.wp-block-verse {
+    width: calc(83.33333% - 91.66667px);
+    float: left;
+    margin-left: 50px;
+    left: calc(8.33333% - 54.16667px + 50px);
+    position: relative; }
+    @media (max-width: 1050px) {
+      .gutenberg-block.alignwide, .alignwide.wp-block-spacer, .alignwide.wp-block-code, .alignwide.wp-block-columns, .alignwide.wp-block-cover-image, .alignwide.wp-block-embed, .gutenberg > .alignwide.wp-block-gallery, .gutenberg h1.alignwide, .gutenberg h2.alignwide, .gutenberg h3.alignwide, .gutenberg h4.alignwide, .gutenberg h5.alignwide, .gutenberg h6.alignwide, .gutenberg > .alignwide.wp-block-image, .gutenberg > ul.alignwide,
+      .gutenberg > ol.alignwide, .gutenberg p.alignwide, .alignwide.wp-block-preformatted, .alignwide.wp-block-pullquote, .alignwide.wp-block-quote, .alignwide.wp-block-separator, .alignwide.wp-block-button, .alignwide.wp-block-table, .alignwide.wp-block-verse {
+        width: calc(83.33333% - 55px);
+        float: left;
+        margin-left: 30px;
+        left: calc(8.33333% - 32.5px + 30px);
+        position: relative; } }
+    @media (max-width: 800px) {
+      .gutenberg-block.alignwide, .alignwide.wp-block-spacer, .alignwide.wp-block-code, .alignwide.wp-block-columns, .alignwide.wp-block-cover-image, .alignwide.wp-block-embed, .gutenberg > .alignwide.wp-block-gallery, .gutenberg h1.alignwide, .gutenberg h2.alignwide, .gutenberg h3.alignwide, .gutenberg h4.alignwide, .gutenberg h5.alignwide, .gutenberg h6.alignwide, .gutenberg > .alignwide.wp-block-image, .gutenberg > ul.alignwide,
+      .gutenberg > ol.alignwide, .gutenberg p.alignwide, .alignwide.wp-block-preformatted, .alignwide.wp-block-pullquote, .alignwide.wp-block-quote, .alignwide.wp-block-separator, .alignwide.wp-block-button, .alignwide.wp-block-table, .alignwide.wp-block-verse {
+        width: calc(100% - 40px);
+        float: left;
+        margin-left: 20px;
+        left: calc(0% - 20px + 20px);
+        position: relative; } }
+  .gutenberg-block.alignfull, .alignfull.wp-block-spacer, .alignfull.wp-block-code, .alignfull.wp-block-columns, .alignfull.wp-block-cover-image, .alignfull.wp-block-embed, .gutenberg > .alignfull.wp-block-gallery, .gutenberg h1.alignfull, .gutenberg h2.alignfull, .gutenberg h3.alignfull, .gutenberg h4.alignfull, .gutenberg h5.alignfull, .gutenberg h6.alignfull, .gutenberg > .alignfull.wp-block-image, .gutenberg > ul.alignfull,
+  .gutenberg > ol.alignfull, .gutenberg p.alignfull, .alignfull.wp-block-preformatted, .alignfull.wp-block-pullquote, .alignfull.wp-block-quote, .alignfull.wp-block-separator, .alignfull.wp-block-button, .alignfull.wp-block-table, .alignfull.wp-block-verse {
+    width: calc(100% - 100px);
+    float: left;
+    margin-left: 50px;
+    left: calc(0% - 50px + 50px);
+    position: relative; }
+    @media (max-width: 1050px) {
+      .gutenberg-block.alignfull, .alignfull.wp-block-spacer, .alignfull.wp-block-code, .alignfull.wp-block-columns, .alignfull.wp-block-cover-image, .alignfull.wp-block-embed, .gutenberg > .alignfull.wp-block-gallery, .gutenberg h1.alignfull, .gutenberg h2.alignfull, .gutenberg h3.alignfull, .gutenberg h4.alignfull, .gutenberg h5.alignfull, .gutenberg h6.alignfull, .gutenberg > .alignfull.wp-block-image, .gutenberg > ul.alignfull,
+      .gutenberg > ol.alignfull, .gutenberg p.alignfull, .alignfull.wp-block-preformatted, .alignfull.wp-block-pullquote, .alignfull.wp-block-quote, .alignfull.wp-block-separator, .alignfull.wp-block-button, .alignfull.wp-block-table, .alignfull.wp-block-verse {
+        width: calc(100% - 60px);
+        float: left;
+        margin-left: 30px;
+        left: calc(0% - 30px + 30px);
+        position: relative; } }
+    @media (max-width: 800px) {
+      .gutenberg-block.alignfull, .alignfull.wp-block-spacer, .alignfull.wp-block-code, .alignfull.wp-block-columns, .alignfull.wp-block-cover-image, .alignfull.wp-block-embed, .gutenberg > .alignfull.wp-block-gallery, .gutenberg h1.alignfull, .gutenberg h2.alignfull, .gutenberg h3.alignfull, .gutenberg h4.alignfull, .gutenberg h5.alignfull, .gutenberg h6.alignfull, .gutenberg > .alignfull.wp-block-image, .gutenberg > ul.alignfull,
+      .gutenberg > ol.alignfull, .gutenberg p.alignfull, .alignfull.wp-block-preformatted, .alignfull.wp-block-pullquote, .alignfull.wp-block-quote, .alignfull.wp-block-separator, .alignfull.wp-block-button, .alignfull.wp-block-table, .alignfull.wp-block-verse {
+        width: calc(100% - 40px);
+        float: left;
+        margin-left: 20px;
+        left: calc(0% - 20px + 20px);
+        position: relative; } }
 
 .one-column::after, .two-columns::after {
   clear: both;
@@ -693,48 +743,44 @@ a {
 .social .strava svg {
   width: 13px; }
 
+.wp-block-code {
+  border: 1px solid #dbdbdb;
+  padding: 25px 25px;
+  background: #fafafa;
+  border-radius: 5px;
+  line-height: 1.3; }
+
+.wp-block-columns .wp-block-column {
+  margin-right: 50px; }
+
+.wp-block-columns.has-1-columns .wp-block-column {
+  width: calc( 100% / 1 - ( 25px * ( 1 - 1 ) ) / 1); }
+  .wp-block-columns.has-1-columns .wp-block-column:nth-child(1n) {
+    margin-right: 0; }
+
+.wp-block-columns.has-2-columns .wp-block-column {
+  width: calc( 100% / 2 - ( 25px * ( 2 - 1 ) ) / 2); }
+  .wp-block-columns.has-2-columns .wp-block-column:nth-child(2n) {
+    margin-right: 0; }
+
+.wp-block-columns p, .wp-block-columns div, .wp-block-columns h1, .wp-block-columns h2, .wp-block-columns h3, .wp-block-columns h4, .wp-block-columns h5, .wp-block-columns h6, .wp-block-columns pre {
+  margin-left: 0;
+  left: 0;
+  width: 100%; }
+
+.wp-block-cover-image p {
+  width: 80%;
+  margin: 0 auto;
+  left: auto; }
+
+.wp-block-embed figcaption {
+  font-size: 16px;
+  margin: 15px 0 0 0;
+  font-weight: 300;
+  color: #929292; }
+
 .gutenberg > .wp-block-gallery {
   padding-left: 0; }
-  .gutenberg > .wp-block-gallery.alignwide {
-    width: calc(83.33333% - 91.66667px);
-    float: left;
-    margin-left: 50px;
-    left: calc(8.33333% - 54.16667px + 50px);
-    position: relative; }
-    @media (max-width: 1050px) {
-      .gutenberg > .wp-block-gallery.alignwide {
-        width: calc(83.33333% - 55px);
-        float: left;
-        margin-left: 30px;
-        left: calc(8.33333% - 32.5px + 30px);
-        position: relative; } }
-    @media (max-width: 800px) {
-      .gutenberg > .wp-block-gallery.alignwide {
-        width: calc(100% - 40px);
-        float: left;
-        margin-left: 20px;
-        left: calc(0% - 20px + 20px);
-        position: relative; } }
-  .gutenberg > .wp-block-gallery.alignfull {
-    width: calc(100% - 100px);
-    float: left;
-    margin-left: 50px;
-    left: calc(0% - 50px + 50px);
-    position: relative; }
-    @media (max-width: 1050px) {
-      .gutenberg > .wp-block-gallery.alignfull {
-        width: calc(100% - 60px);
-        float: left;
-        margin-left: 30px;
-        left: calc(0% - 30px + 30px);
-        position: relative; } }
-    @media (max-width: 800px) {
-      .gutenberg > .wp-block-gallery.alignfull {
-        width: calc(100% - 40px);
-        float: left;
-        margin-left: 20px;
-        left: calc(0% - 20px + 20px);
-        position: relative; } }
   .gutenberg > .wp-block-gallery.columns-1 .blocks-gallery-item {
     width: calc( 100% / 1 - ( 25px * ( 1 - 1 ) ) / 1); }
     .gutenberg > .wp-block-gallery.columns-1 .blocks-gallery-item:nth-child(1n) {
@@ -808,48 +854,6 @@ a {
 .gutenberg h6 {
   font-size: 16px; }
 
-.gutenberg > .wp-block-image.alignwide {
-  width: calc(83.33333% - 91.66667px);
-  float: left;
-  margin-left: 50px;
-  left: calc(8.33333% - 54.16667px + 50px);
-  position: relative; }
-  @media (max-width: 1050px) {
-    .gutenberg > .wp-block-image.alignwide {
-      width: calc(83.33333% - 55px);
-      float: left;
-      margin-left: 30px;
-      left: calc(8.33333% - 32.5px + 30px);
-      position: relative; } }
-  @media (max-width: 800px) {
-    .gutenberg > .wp-block-image.alignwide {
-      width: calc(100% - 40px);
-      float: left;
-      margin-left: 20px;
-      left: calc(0% - 20px + 20px);
-      position: relative; } }
-
-.gutenberg > .wp-block-image.alignfull {
-  width: calc(100% - 100px);
-  float: left;
-  margin-left: 50px;
-  left: calc(0% - 50px + 50px);
-  position: relative; }
-  @media (max-width: 1050px) {
-    .gutenberg > .wp-block-image.alignfull {
-      width: calc(100% - 60px);
-      float: left;
-      margin-left: 30px;
-      left: calc(0% - 30px + 30px);
-      position: relative; } }
-  @media (max-width: 800px) {
-    .gutenberg > .wp-block-image.alignfull {
-      width: calc(100% - 40px);
-      float: left;
-      margin-left: 20px;
-      left: calc(0% - 20px + 20px);
-      position: relative; } }
-
 .gutenberg > .wp-block-image figcaption {
   font-size: 16px;
   margin: 15px 0 0 0;
@@ -885,9 +889,46 @@ a {
     line-height: 34px;
     font-weight: normal; }
 
-.wp-block-quote p {
+.wp-block-pullquote {
+  border-top: 4px solid #494949;
+  border-bottom: 4px solid #494949; }
+  .wp-block-pullquote p,
+  .wp-block-pullquote cite {
+    width: 80%;
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    font-weight: normal;
+    left: auto;
+    text-align: center;
+    display: block; }
+  .wp-block-pullquote p {
+    margin-bottom: 10px; }
+  .wp-block-pullquote cite {
+    margin-top: 20px; }
+
+.wp-block-quote {
   border-left: 4px solid #494949;
-  padding-left: 20px; }
+  padding: 5px 0 5px 20px; }
+  .wp-block-quote p {
+    margin-left: 0;
+    left: 0;
+    width: 100%;
+    float: none;
+    clear: both; }
+  .wp-block-quote cite {
+    font-size: 15px;
+    color: #929292; }
+
+.wp-block-separator {
+  border: 1px solid #494949; }
+
+.wp-block-table {
+  border: 1px solid #dbdbdb;
+  padding: 20px; }
+  .wp-block-table td {
+    padding: 10px;
+    border: 1px solid #dbdbdb; }
 
 .wd-form {
   position: relative; }

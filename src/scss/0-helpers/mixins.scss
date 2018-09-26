@@ -9,3 +9,16 @@
 		}
 	}
 }
+
+@mixin wp-block-columns-column($columns) {
+	&.has-#{$columns}-columns {
+
+		.wp-block-column {
+			width: calc( 100% / #{$columns} - ( #{$gallery-spacing} * ( #{$columns} - 1 ) ) / #{$columns} );
+
+			&:nth-child(#{$columns}n) {
+				margin-right: 0;
+			}
+		}
+	}
+}
