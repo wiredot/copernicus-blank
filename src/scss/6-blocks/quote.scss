@@ -9,6 +9,11 @@
 		width: 100%;
 		float: none;
 		clear: both;
+		margin-bottom: 25px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	cite {
